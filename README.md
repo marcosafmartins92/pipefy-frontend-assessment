@@ -65,3 +65,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## To run CY test
+
+- Run de following command ``npm run cy:open``
+- Select Test and run

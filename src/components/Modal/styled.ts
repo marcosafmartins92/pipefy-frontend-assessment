@@ -22,7 +22,19 @@ export const Wrapper = styled.section`
   right: 10%;
   background: white;
   z-index: 3;
-  padding: 30px;
+  padding: 70px 30px 30px 30px;
   border-radius: 20px;
   animation: ${openWrapper} 1s forwards;
+`
+
+export const CloseButton = styled.button`
+  position: absolute;
+  top: 17px;
+  right: 34px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
 `

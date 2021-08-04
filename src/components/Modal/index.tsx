@@ -12,6 +12,7 @@ const Modal: FC<{ onCancel: () => void, children: ReactElement }> = ({ children,
     <>
     <Styled.Backdrop data-id='backdrop' onClick={onCancel}></Styled.Backdrop>
     <Styled.Wrapper data-id='modal-wrapper'>
+      <Styled.CloseButton onClick={onCancel}>X</Styled.CloseButton>
       {children}
     </Styled.Wrapper>
     </>

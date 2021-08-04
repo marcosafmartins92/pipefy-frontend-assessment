@@ -1,17 +1,15 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import './App.css';
+import { client } from './services/ApolloService'
+import { ApolloProvider } from "@apollo/client";
+import PipeList from './components/PipeList';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img
-          src="https://files.readme.io/9e810f9-small-developers3x.png"
-          className="App-logo"
-          alt="logo"
-        />
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      <PipeList />
+    </ApolloProvider>
   );
 }
 

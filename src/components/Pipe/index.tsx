@@ -19,9 +19,9 @@ const Pipe: FC<PipeType> = ({ id, icon, image, name }) => {
   return (
     <>
       <Styled.Card data-id={`pipe-card-${id}`} bgColor={color} onClick={openModal}>
-        <i className={icon}></i>
-        <strong>{name} </strong>
-        <Styled.CardsCount>{cardsCount} cards</Styled.CardsCount>
+        <i data-testid='icon' className={icon}></i>
+        <strong data-testid='name'>{name} </strong>
+        <Styled.CardsCount data-testid='cards-count'>{cardsCount} cards</Styled.CardsCount>
       </Styled.Card>
       {isOpen && <Modal onCancel={closeModal}>
         <section data-id={`pipe-modal-${id}`}>

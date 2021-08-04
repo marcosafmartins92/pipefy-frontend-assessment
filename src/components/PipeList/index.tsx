@@ -14,7 +14,7 @@ function PipeList() {
   const orederedPipes = dataPipes?.pipe_templates ? [...dataPipes?.pipe_templates].sort(orderByName) : null;
 
   return (
-    <Styled.Wrapper data-id='pipe-list'>
+    <Styled.Wrapper data-id='pipe-list' data-testid='pipe-list'>
       {orederedPipes?.map((pipe: PipeType) => (
         <Pipe {...pipe} key={pipe.id}/>
       ))}
